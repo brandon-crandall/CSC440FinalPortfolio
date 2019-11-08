@@ -36,12 +36,12 @@ namespace Demonstration_Programs
             Console.ReadLine();
             Console.WriteLine();
 
-            Console.WriteLine("Would you like to delete a file? (y/n)");
+            Console.Write("Would you like to delete a file? (y/n)");
             string userchoice = Console.ReadLine();
             userchoice = userchoice.ToLower();
             if (userchoice == "y")
             {
-                Console.WriteLine("What is the filepath of the file you want deleted? ");
+                Console.Write("What is the filepath of the file you want deleted? ");
                 string fileToBeDeleted = Console.ReadLine();
                 deleteFile(fileToBeDeleted);
             }
@@ -115,6 +115,30 @@ namespace Demonstration_Programs
             }
         }
     }
-
-    
 }
+
+/*Output:
+
+Here is the location of the temp folder.
+C:\Users\brand\AppData\Local\Temp\
+
+Specify the folder name and path you want to create: C:\temp
+Specify the file name you would like to be created in the folder: test.txt
+What would you like to put in the file: Hi I made this file.
+
+
+We are going to read whats in the file:
+This is what you wanted:
+
+Hi I made this file.
+
+C# is cool!
+
+
+
+Would you like to delete a file? (y/n)y
+What is the filepath of the file you want deleted? C:\temp\test.txt
+File deleted.
+
+
+ */
