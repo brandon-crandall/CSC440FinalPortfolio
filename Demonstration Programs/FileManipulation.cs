@@ -10,52 +10,10 @@ using System;
 
 namespace Demonstration_Programs
 {    
-    class Program
+    public static class FileManipulation
     {
-        static void Main()
-        {
-            tempPath();
-            Console.WriteLine();
-
-            //Creating directory. My example will be C:\temp
-            Console.Write("Specify the folder name and path you want to create: ");
-            string userDirectory = Console.ReadLine();
-            Directory.CreateDirectory(userDirectory);
-            
-            //creating file, examples is mytest.txt
-            Console.Write("Specify the file name you would like to be created in the folder: ");
-            string userFilePath = Console.ReadLine();
-
-            //I combine the directory path with the file name in order to send my function the full location
-            string fullPath = Path.Combine(userDirectory, userFilePath);
-            createFile(fullPath);
-
-            Console.ReadLine();
-            Console.WriteLine();
-
-            Console.WriteLine("We are going to read whats in the file:");
-            readFile(fullPath);
-
-            Console.ReadLine();
-            Console.WriteLine();
-
-            Console.Write("Would you like to delete a file? (y/n)");
-            string userchoice = Console.ReadLine();
-            userchoice = userchoice.ToLower();
-            if (userchoice == "y")
-            {
-                Console.Write("What is the filepath of the file you want deleted? ");
-                string fileToBeDeleted = Console.ReadLine();
-                deleteFile(fileToBeDeleted);
-            }
-            
-
-            Console.ReadLine();
-
-        }
-
         //Created a simple function that when called will give us the directory path to the temp folder
-        static void tempPath()
+        public static void tempPath()
         {
             Console.WriteLine("Here is the location of the temp folder.");
             string tempDirectoryPath = Path.GetTempPath();
@@ -63,7 +21,7 @@ namespace Demonstration_Programs
         }
 
         //Creating a file on the C drive
-        static void createFile(string userFilePath)
+        public static void createFile(string userFilePath)
         {
             //Checking to see if the file exists. If it does this will not do anything.
             //If it doesn't exit then we will create the file and add some text.
@@ -92,7 +50,7 @@ namespace Demonstration_Programs
         }
 
         //Read from the file just created
-        static void readFile(string userFilePath)
+        public static void readFile(string userFilePath)
         {
             // Open the file to read from.
             using (StreamReader sr = File.OpenText(userFilePath))
@@ -103,7 +61,7 @@ namespace Demonstration_Programs
         }
 
         //Now we will remove the file created
-        static void deleteFile(string userFilePath)
+        public static void deleteFile(string userFilePath)
         {
 
             // If file found, delete it  
