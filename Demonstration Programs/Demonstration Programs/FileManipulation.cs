@@ -1,12 +1,15 @@
-﻿using System.IO;
+﻿
+/// <summary> 
+/// STUDENT: Brandon Crandall
+/// SYNOPSIS:Using the classes in the System.IO namespace I'm going to use various methods to create and manipulate files.
+/// </summary>
+
+
+using System.IO;
 using System;
 
 namespace Demonstration_Programs
-
-{   /// <summary>
-    /// Using the classes in the System.IO namespace I'm going to use various methods to create and manipulate files.
-    /// </summary>
-     
+{    
     class Program
     {
         static void Main()
@@ -117,7 +120,11 @@ namespace Demonstration_Programs
     }
 }
 
-/*Output:
+//MODIFICATIONS: Created this myself
+
+//ANALYSIS: Uses user input to create and call methods, create a directory, create/delete/read/write a file
+
+/* Sample Output:
 
 Here is the location of the temp folder.
 C:\Users\brand\AppData\Local\Temp\
