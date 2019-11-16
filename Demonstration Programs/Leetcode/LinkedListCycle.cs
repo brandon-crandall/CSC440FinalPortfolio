@@ -11,24 +11,13 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Demonstration_Programs
+namespace Leetcode
 {
-    class LinkedListCycle
+    public class LinkedListCycle
     {
-        static void Main()
-        {
-            LinkedListCycle newlist = new LinkedListCycle();
-            newlist.AddFront(1);
-            newlist.AddFront(2);
-            newlist.AddFront(3);
-            newlist.AddFront(4);
-
-            newlist.HasCycle();
-
-        }
 
         //Creating a method to add values to a linkedlist
-        ListNode head;
+        public ListNode head;
         public void AddFront(int Value)
         {
             ListNode newNode = new ListNode(Value);
@@ -56,14 +45,16 @@ namespace Demonstration_Programs
                 //if they are on the same node there is a cycle
                 if (tortoise == hare)
                 {
+                    Console.WriteLine("It has a cycle!");
                     return true;
                 }
             }
+            Console.WriteLine("It does not have a cycle!");
             return false;
         }
 
         //Creating a node of a linked list
-        class ListNode
+        public class ListNode
         {
             //value stored in a node
             public int value;
@@ -80,4 +71,12 @@ namespace Demonstration_Programs
 
     }
 }
+//MODIFICATIONS: Created this myself
+
+//ANALYSIS: Can determine if there is a cycle in a linkedlist
+
+/* Sample Output
+ It does not have a cycle!
+ It has a cycle!
+ */
 

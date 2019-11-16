@@ -694,11 +694,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\brand\\source\\repos\\Demonstration Programs\\Demonstration Programs\\Demonstration Programs.csproj",
+      "projectUniqueName": "C:\\Users\\brand\\source\\repos\\CSC440FinalPortfolio\\Demonstration Programs\\Demonstration Programs\\Demonstration Programs.csproj",
       "projectName": "Demonstration Programs",
-      "projectPath": "C:\\Users\\brand\\source\\repos\\Demonstration Programs\\Demonstration Programs\\Demonstration Programs.csproj",
+      "projectPath": "C:\\Users\\brand\\source\\repos\\CSC440FinalPortfolio\\Demonstration Programs\\Demonstration Programs\\Demonstration Programs.csproj",
       "packagesPath": "C:\\Users\\brand\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\brand\\source\\repos\\Demonstration Programs\\Demonstration Programs\\obj\\",
+      "outputPath": "C:\\Users\\brand\\source\\repos\\CSC440FinalPortfolio\\Demonstration Programs\\Demonstration Programs\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

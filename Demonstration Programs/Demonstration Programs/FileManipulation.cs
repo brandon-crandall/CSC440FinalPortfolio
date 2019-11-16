@@ -10,9 +10,9 @@ using System;
 
 namespace Demonstration_Programs
 {    
-    class Program
+    class FileManipulation
     {
-        static void Main()
+               public static void RunFileManipulation()
         {
             tempPath();
             Console.WriteLine();
