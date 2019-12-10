@@ -13,16 +13,16 @@ using System.Text;
 
 namespace Leetcode
 {
-    class ProgramOutputs
-    {
-        static void Main(string[] args)
-        {
-            TwoSum test = new TwoSum();
-            int[] numbers = new int[] { 2, 7, 11, 15 };
-            Console.WriteLine(string.Join(System.Environment.NewLine, test.TwoSumSolution(numbers, 9)));
+    //class ProgramOutputs
+    //{
+    //    static void Main(string[] args)
+    //    {
+    //        TwoSum test = new TwoSum();
+    //        int[] numbers = new int[] { 2, 7, 11, 15 };
+    //        Console.WriteLine(string.Join(System.Environment.NewLine, test.TwoSumSolution(numbers, 9)));
 
-        }
-    }
+    //    }
+    //}
     class TwoSum
     {
         //Goes through the array and finds two numbers that add up to the target number
