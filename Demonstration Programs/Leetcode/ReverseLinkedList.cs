@@ -29,11 +29,11 @@ namespace Leetcode
     //Inheriting from the SinglyLinkedList class I created in order to get necessary methods
     class ReverseLinkedList : SinglyLinkedList
     {
-        //Function to reverse a linked list using recursion
+        //Function to reverse a linked list
         public void ReverseList()
         {
             //end up using 3 points (prev, curr, nextTemp) in order to turn the pointers to the previous node
-            //while not losing the rest of the linkedlist because that would be technically be a memory leak which
+            //while not losing the rest of the linkedlist because that would technically be a memory leak which
             //is handled by the garbage collector in C# but that isn't the case in every programming language
             ListNode prev = null;
             ListNode curr = head;
@@ -49,7 +49,7 @@ namespace Leetcode
         }
     }
 }
-//MODIFICATIONS: Created this myself using recursion.
+//MODIFICATIONS: Created this myself 
 
 //ANALYSIS: Reverses a Linked List and uses inheritance from the SinglyLinkedList class I created.
 
