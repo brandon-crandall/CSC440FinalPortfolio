@@ -29,20 +29,10 @@ namespace Leetcode
     //        newlist.HasCycle();
     //    }
     //}
-    public class LinkedListCycle
+
+    //Inheriting from the SinglyLinkedList class I created in order to get necessary methods
+    class LinkedListCycle : SinglyLinkedList
     {
-
-        //Creating a method to add values to a linkedlist
-        public ListNode head;
-        public void AddFront(int Value)
-        {
-            ListNode newNode = new ListNode(Value);
-
-            newNode.next = head;
-
-            head = newNode;
-        }
-
         //I used Floyd's Tortoise and Hare algorithm to solve this problem. The concept is that you use two pointers to move through the linked list
         //at different speeds. The tortoise moves one node at a time and the hare moves two. If they ever land on the same node then there is a cycle
         //but if the hare reaches null then there isn't a cycle.
@@ -68,23 +58,6 @@ namespace Leetcode
             Console.WriteLine("It does not have a cycle!");
             return false;
         }
-
-        //Creating a node of a linked list
-        public class ListNode
-        {
-            //value stored in a node
-            public int value;
-            //this is the pointer portion of a node
-            public ListNode next;
-
-            public ListNode(int value)
-            {
-                this.value = value;
-                next = null;
-            }
-
-        }
-
     }
 }
 //MODIFICATIONS: Created this myself using Floyd's algorthm.
