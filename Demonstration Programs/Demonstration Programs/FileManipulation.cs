@@ -9,14 +9,16 @@ using System.IO;
 using System;
 
 namespace Demonstration_Programs
-{    
+{
+    //class ProgramOutputs
+    //{
+    //    static void Main()
+    //    {
+    //        FileManipulation.RunFileManipulation();
+    //    }
+    //}
     class FileManipulation
     {
-        //static void main()
-        //{
-        //    filemanipulation.runfilemanipulation();
-
-        //}
         public static void RunFileManipulation()
         {
             tempPath();
