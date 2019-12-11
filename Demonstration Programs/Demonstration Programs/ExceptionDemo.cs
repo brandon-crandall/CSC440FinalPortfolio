@@ -14,6 +14,7 @@ namespace Demonstration_Programs
 
     class ExceptionDemo
     {
+        /*
         static void Main()
         {
             //using a try/catch block to handle errors lets you keep the program from crashing.
@@ -35,6 +36,7 @@ namespace Demonstration_Programs
             }
             
         }
+        */
 
     }
 }
