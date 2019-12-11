@@ -23,18 +23,21 @@ namespace Demonstration_Programs
             myStack.Push("brown ");
             myStack.Push("now ");
             myStack.Push("How ");
+
             // Displays the count and values of the Stack.
             Console.WriteLine("Creating my stack");
             Console.WriteLine("Count: {0}", myStack.Count);
             Console.Write("Values:");
             PrintValues(myStack);
             Console.ReadLine();
+
             // Removes an element from the Stack.
             Console.WriteLine("Poping the value off the top of the stack", myStack.Pop());
             Console.WriteLine("Count: {0}", myStack.Count);
             Console.Write("Values:");
             PrintValues(myStack);
             Console.ReadLine();
+
             // Views the first element in the Stack but does not remove it.
             Console.WriteLine("(Peek at the top value in the stack) {0}", myStack.Peek());
             Console.ReadLine();
@@ -50,6 +53,7 @@ namespace Demonstration_Programs
             PrintValues(myStack);
             Console.ReadLine();
 
+            //The IEnumerable interface exposes an enumerator, which supports a simple iteration over a non-generic collection.
             void PrintValues(IEnumerable myCollection)
             {
                 foreach (Object obj in myCollection)
